@@ -86,6 +86,3 @@ class TestQuestions:
         section_questions.click_question(MainPage.questions_7)
 
         assert section_questions.text_answer(MainPage.answer_7) == 'Да, обязательно. Всем самокатов! И Москве, и Московской области.'
-
-
-
