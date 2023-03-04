@@ -1,0 +1,5 @@
+geckodriver.log
+.pytest_cache
+.venv
+geckodriver.log
+.idea
