@@ -13,7 +13,7 @@ class BasePage:
     def wait_load_main_page(self):
         self.wait.until(EC.visibility_of_element_located(MainPage.home_page))
 
-    # Нажимаем кнопку "Заказать" в шапке страницы
+    # Кликаем на кнопку "Заказать" в шапке страницы
     def click_order_button_header(self):
         self.wait.until(EC.element_to_be_clickable(MainPage.button_order_middle))
         self.driver.find_element(*MainPage.button_order_header).click()
@@ -25,16 +25,16 @@ class BasePage:
         self.wait.until(EC.visibility_of_element_located(MainPage.sroll_button_middle))
         self.wait.until(EC.element_to_be_clickable(MainPage.button_order_middle))
 
-    # Нажимаем кнопку "Заказать" в середине страницы
+    # Кликаем на кнопку "Заказать" в середине страницы
     def click_order_button_middle(self):
         self.driver.find_element(*MainPage.button_order_middle).click()
 
-    # Нажимаем кнопку лого Самоката
+    # Кликаем на кнопку лого Самоката
     def click_logo_scooter(self):
         self.driver.find_element(*MainPage.logo_scooter).click()
         self.wait.until(EC.url_to_be('https://qa-scooter.praktikum-services.ru/'))
 
-    # Нажимаем кнопку лого Яндекса
+    # Кликаем на кнопку лого Яндекса
     def click_logo_yandex(self):
         self.wait.until(EC.element_to_be_clickable(MainPage.logo_yandex))
         self.driver.find_element(*MainPage.logo_yandex).click()

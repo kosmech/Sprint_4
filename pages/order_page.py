@@ -47,7 +47,7 @@ class Order:
         self.driver.find_element(*OrderPage.click_station).click()
         self.driver.find_element(*OrderPage.phone).send_keys(phone)
 
-    # Кликаем кнопку "Далее"
+    # Кликаем на кнопку "Далее"
     def click_first_form_button_next(self):
         self.driver.find_element(*OrderPage.button_next_1).click()
 
@@ -60,11 +60,11 @@ class Order:
         self.driver.find_element(By.ID, color).click()
         self.driver.find_element(*OrderPage.comment).send_keys(comment)
 
-    # Кликаем кнопку "Далее"
+    # Кликаем на кнопку "Далее"
     def click_second_form_button_next(self):
         self.driver.find_element(*OrderPage.button_next_2).click()
 
-    # Кликаем кнопку "Да"
+    # Кликаем на кнопку "Да"
     def click_button_yes(self):
         self.driver.find_element(*OrderPage.button_window).click()
 
@@ -73,6 +73,6 @@ class Order:
         text = self.driver.find_element(*OrderPage.title_window).text
         return text
 
-    # Кликаем кнопку "Проверить заказ"
+    # Кликаем на кнопку "Проверить заказ"
     def button_check_status(self):
         self.driver.find_element(*OrderPage.button_check_status).click()
